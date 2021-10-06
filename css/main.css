@@ -54,3 +54,8 @@ ul.posts li {
         text-align:center;
         display:block;
         }
+
+.imageLeft{
+    text-align: left;
+    display: block;
+    }
