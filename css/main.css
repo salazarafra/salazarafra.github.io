@@ -32,8 +32,10 @@ p {
     color: #333;
 }
 footer {
+    clear: both;
     bottom:0;
-    width: 80%;
+    position: fixed;
+    width: 70%;
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
