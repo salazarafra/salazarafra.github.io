@@ -46,6 +46,8 @@ p {
     color: #333;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     width: 100%;
+    padding-left: 80px;
+    padding-top: 50px;
 }
 
 footer {
