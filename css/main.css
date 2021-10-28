@@ -40,6 +40,14 @@ p {
     width: 70%;
 }
 
+.research {
+    font-size: 1.0em;
+    line-height: 1.4em;
+    color: #333;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    width: 100%;
+}
+
 footer {
     clear: both;
     bottom:10px;
