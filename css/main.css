@@ -109,12 +109,17 @@ iframe {
 
 table{
     width: 55%;
-    font-weight: 300;  
+    font-weight: 300; 
+    border-collapse: collapse;
+    float:left;
 }
 
-table, td, tr {
+td, tr {
     background-color: #FFFFFF;
     color: #000000;
     width: 55%;
     float:left;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #d5d5d5;
 }
