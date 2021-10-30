@@ -112,6 +112,8 @@ table{
     font-weight: 300; 
     border-collapse: collapse;
     float:left;
+    font-size: 1.0em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 td, tr {
@@ -122,4 +124,6 @@ td, tr {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #d5d5d5;
+    font-size: 1.0em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
