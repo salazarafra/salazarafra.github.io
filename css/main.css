@@ -109,13 +109,12 @@ iframe {
 
 table{
     width: 40%;
-    font-weight: bold;
-  
+    font-weight: 300;  
 }
 
 table, td, tr {
-    background-color: #000000;
-    color: #fff;
+    background-color: #FFF;
+    color: #000000;
     width: 40%;
     float:left;
 }
