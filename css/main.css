@@ -65,7 +65,7 @@ hr{
 
 footer {
     clear: both;
-    bottom:10px;
+    bottom: 0px;
     position: fixed;
     width: 70%;
     border-top: 1px solid #d5d5d5;
@@ -98,5 +98,5 @@ iframe {
     background: #000;
     border: none;
     width: 70%;
-    height: 80%;
+    height: 70%;
 }
