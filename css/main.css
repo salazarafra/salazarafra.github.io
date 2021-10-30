@@ -100,3 +100,22 @@ iframe {
     width: 70%;
     height: 80%;
 }
+
+.image {
+ height: auto;
+ width: 250px;
+ float:right;
+}
+
+table{
+    width: 40%;
+    font-weight: bold;
+  
+}
+
+table, td, tr {
+    background-color: #000000;
+    color: #fff;
+    width: 40%;
+    float:left;
+}
