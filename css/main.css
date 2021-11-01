@@ -126,3 +126,10 @@ td, tr, th {
     font-size: 1.0em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  table {
+    width: 100%;
+  }
+}
