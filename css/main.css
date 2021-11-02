@@ -137,4 +137,8 @@ table .absorbing-column {
   table {
     width: 100%;
   }
+    
+  table .absorbing-column {
+    width: 65%;
+  } 
 }
