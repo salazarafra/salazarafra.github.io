@@ -129,7 +129,7 @@ td, tr, th {
 }
 
 table .absorbing-column {
-    width: 55%;
+    width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
