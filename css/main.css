@@ -117,6 +117,7 @@ table{
     float:left;
     font-size: 1.0em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding-bottom: 25px;
 }
 
 td, tr, th {
@@ -148,7 +149,7 @@ table .absorbing-column {
     clear: both;
     bottom: 0px;
     position: relative;
-    width: 70%;
+    width: 100%;
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
     background-color: #FFFFFF;
