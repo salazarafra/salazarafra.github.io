@@ -142,5 +142,15 @@ table .absorbing-column {
     
   table .absorbing-column {
     width: 65%;
-  } 
+  }
+    
+  footer {
+    clear: both;
+    bottom: 0px;
+    position: absolute;
+    width: 70%;
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+    background-color: #FFFFFF;
+    }
 }
