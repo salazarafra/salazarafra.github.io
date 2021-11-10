@@ -147,7 +147,7 @@ table .absorbing-column {
   footer {
     clear: both;
     bottom: 0px;
-    position: absolute;
+    position: relative;
     width: 70%;
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
