@@ -103,6 +103,11 @@ ul.posts li {
     display: block;
     }
 
+rimg{
+    float: left; 
+    padding-right: 30px;
+}
+
 iframe {
     position: absolute
     background: #000;
@@ -163,4 +168,9 @@ table .absorbing-column {
     font-size: .8em;
     background-color: #FFFFFF;
     }
+    
+    rimg{
+    float: left; 
+    padding-right: 0px;
+}
 }
