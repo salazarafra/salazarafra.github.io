@@ -122,26 +122,12 @@ ul.posts li {
     }
 }
 
-.container {
-  max-width: 100%;
-  border: 3px solid blue;
-  &__image {
-    display: inline-block;
-    vertical-align: top;
-    width: 46%;
-    margin: 20px 30px 0 0;
-    @media (max-width: 768px) {
-      width: 100%;
-    }
-  }
-  &__text {
-    display: inline-block;
-    width: 46%;
-    background-color: gray;
-    @media (max-width: 768px) {
-      width: 100%;
-    }
-  }
+.hid {
+overflow:hidden;
+}
+
+@media (max-width: 768px) {
+    .hid {}
 }
 
 
