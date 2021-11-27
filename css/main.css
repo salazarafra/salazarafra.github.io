@@ -109,10 +109,19 @@ ul.posts li {
     display: block;
     }
 
-.rimg{
+.rimg {
     float: left; 
     padding-right: 30px;
 }
+
+
+@media (max-width: 768px) {
+    .rimg{
+        float: left; 
+        padding-right: 0px;
+    }
+}
+
 
 iframe {
     position: absolute
@@ -154,7 +163,7 @@ table .absorbing-column {
     width: 75%;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   /* For mobile phones: */
   table {
     width: 100%;
@@ -174,9 +183,4 @@ table .absorbing-column {
     font-size: .8em;
     background-color: #FFFFFF;
     }
-    
-    .rimg{
-    float: left; 
-    padding-right: 0px;
-}
 }
