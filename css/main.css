@@ -127,7 +127,9 @@ overflow:hidden;
 }
 
 @media (max-width: 768px) {
-    .hid {}
+    .hid {
+    clear: both;
+    }
 }
 
 
