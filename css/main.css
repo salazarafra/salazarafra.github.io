@@ -124,6 +124,7 @@ ul.posts li {
 
 .container {
   max-width: 100%;
+  border: 3px solid blue;
   &__image {
     display: inline-block;
     vertical-align: top;
@@ -136,6 +137,7 @@ ul.posts li {
   &__text {
     display: inline-block;
     width: 46%;
+    background-color: gray;
     @media (max-width: 768px) {
       width: 100%;
     }
