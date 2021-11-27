@@ -117,8 +117,9 @@ ul.posts li {
 
 @media (max-width: 768px) {
     .rimg{
-        float: left; 
-        padding-right: 0px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
