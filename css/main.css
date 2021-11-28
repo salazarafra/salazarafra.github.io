@@ -79,7 +79,8 @@ hr{
      height: 1px;
      background-color: #d5d5d5;
      border: none; 
-     padding: 0px;
+     padding: 0px; /* This line does nothing */
+     margin: 0px;
 }
 
 footer {
