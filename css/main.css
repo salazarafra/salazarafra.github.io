@@ -54,6 +54,7 @@ p {
     /* line-height: 1.4em; */
     color: #6A2B54;
     font-family:'Palatino';
+    padding-bottom: 0px;
 }
 
 .research {
@@ -77,6 +78,7 @@ hr{
      height: 1px;
      background-color: #d5d5d5;
      border: none; 
+     padding: 0px;
 }
 
 footer {
