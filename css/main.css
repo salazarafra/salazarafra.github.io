@@ -121,6 +121,9 @@ ul.posts li {
     .rimg{
         text-align:center;
         display:block;
+        height: auto;
+        width: 100%;
+        padding: 0% 10% 0% 10%;
     }
 }
 
