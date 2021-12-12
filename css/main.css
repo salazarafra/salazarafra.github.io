@@ -216,3 +216,13 @@ table .absorbing-column {
     background-color: #FFFFFF;
     }
 }
+
+.slab {
+    width: 100%;
+    font-size: 3.0em;
+    /* line-height: 1.4em; */
+    color: #212121;
+    font-family:'Noto';
+    padding-bottom: 0px;
+    margin-bottom: 1px;
+}
