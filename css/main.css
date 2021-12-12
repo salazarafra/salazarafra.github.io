@@ -223,7 +223,23 @@ table .absorbing-column {
     text-align:center;
     /* line-height: 1.4em; */
     color: #212121;
-    font-family:'Noto';
+    font-family:'Didot';
     padding-bottom: 0px;
     margin-bottom: 1px;
+}
+
+.slab_date {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #A9A9A9;
+    text-align:center;
+}
+
+.slab_paragraph { /*For now it is the same as lighter*/
+    font-size: 1.0em;
+    line-height: 1.5em;
+    color: #333;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    width: 100%;
+    font-weight: 100;
 }
