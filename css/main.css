@@ -230,9 +230,10 @@ table .absorbing-column {
 
 .slab_date {
     font-size: 1.5em;
-    line-height: 1.4em;
+    line-height: 1.2em;
     color: #A9A9A9;
     text-align:center;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 .slab_paragraph { /*For now it is the same as lighter*/
