@@ -219,7 +219,8 @@ table .absorbing-column {
 
 .slab {
     width: 100%;
-    font-size: 3.0em;
+    font-size: 3em;
+    text-align:center;
     /* line-height: 1.4em; */
     color: #212121;
     font-family:'Noto';
