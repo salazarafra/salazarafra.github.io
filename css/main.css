@@ -254,3 +254,7 @@ table .absorbing-column {
      width:20%;
      text-align:center;
 }
+
+.box {
+  width: 80%;
+}
