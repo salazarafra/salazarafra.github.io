@@ -218,7 +218,7 @@ table .absorbing-column {
 }
 
 .slab {
-    width: 100%;
+    width: 80%;
     font-size: 3em;
     text-align:center;
     line-height: 1.5em;
@@ -240,8 +240,8 @@ table .absorbing-column {
     font-size: 1.0em;
     line-height: 1.5em;
     color: #333;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    width: 100%;
+    font-family:'Noto'';
+    width: 80%;
     font-weight: 100;
 }
 
