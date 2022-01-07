@@ -7,16 +7,15 @@ body {
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding-bottom: 5px;
-    margin-top: -5px;
+    margin-top: -10px;
     list-style: none;
     font-weight: bold;
     font-size: large;
     text-align: center;
+    width: 90%;
 }
 
 nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
     display: inline-block;
 }
 
