@@ -4,6 +4,50 @@ body {
     width: 70%;
 }
 
+@font-face {
+    font-family: 'Adobe Garamond Pro';
+    src: url('AGaramondPro-Bold.eot');
+    src: url('AGaramondPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AGaramondPro-Bold.woff2') format('woff2'),
+        url('AGaramondPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adobe Garamond Pro';
+    src: url('AGaramondPro-Italic.eot');
+    src: url('AGaramondPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('AGaramondPro-Italic.woff2') format('woff2'),
+        url('AGaramondPro-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adobe Garamond Pro';
+    src: url('AGaramondPro-Regular.eot');
+    src: url('AGaramondPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AGaramondPro-Regular.woff2') format('woff2'),
+        url('AGaramondPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adobe Garamond Pro';
+    src: url('AGaramondPro-BoldItalic.eot');
+    src: url('AGaramondPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('AGaramondPro-BoldItalic.woff2') format('woff2'),
+        url('AGaramondPro-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding-bottom: 5px;
