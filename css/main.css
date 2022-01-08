@@ -1,5 +1,5 @@
 body {
-    margin: 60px auto;
+    margin: auto;
     margin-bottom: 0px;
     width: 70%;
 }
@@ -48,25 +48,9 @@ body {
     font-display: swap;
 }
 
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding-bottom: 5px;
-    margin-top: -10px;
-    list-style: none;
-    font-weight: bold;
-    font-size: large;
-    text-align: center;
-    width: 90%;
-}
-
-nav ul li, footer ul li {
-    display: inline-block;
-}
-
 a {
     text-decoration: none;
     color: #A09B8A;
-    margin: 20px;
 }
 
 a:hover {
@@ -98,13 +82,15 @@ p {
 
 .rsrcht {
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1.3em;
     /* line-height: 1.4em; */
     color: #6A2B54;
-    font-family:'Avenir';
+    font-family:'Helvetica', 'Sans Serif';
     padding-bottom: 0px;
     margin-bottom: 1px;
+    font-weight: 300;
 }
+
 
 @media (max-width: 768px) {
     .rsrcht {
@@ -112,12 +98,21 @@ p {
         font-size: 1.5em;
         /* line-height: 1.4em; */
         color: #6A2B54;
-        font-family:'Palatino';
+        font-family:'Charter';
         font-style: italic;
         padding-bottom: 0px;
         margin-bottom: 1px;
 }
-    
+
+.namecv {
+    font-size: x-large;
+    line-height: 1.4em;
+    color: #333;
+    position:relative;
+    text-align:left; 
+    font-weight: 400;
+    font-family:'Helvetica', 'Avenir', 'Sans-Serif';
+}  
     
 }
 
@@ -153,7 +148,7 @@ footer {
     width: 70%;
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 
 ul.posts { 
@@ -169,6 +164,7 @@ ul.posts li {
         {
         text-align:center;
         display:block;
+        margin-top: 5%;
         }
 
 .imageLeft{
@@ -203,7 +199,7 @@ overflow:hidden;
 
 
 iframe {
-    position: absolute
+    position: absolute;
     background: #000;
     border: none;
     width: 70%;
@@ -260,7 +256,7 @@ table .absorbing-column {
     width: 100%;
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     }
 }
 
@@ -270,16 +266,18 @@ table .absorbing-column {
     text-align:center;
     line-height: 1.5em;
     color: #212121;
-    font-family:'Didot';
+    font-family:'Adobe Garamond Pro';
     padding-bottom: 0px;
     margin-bottom: 1px;
+    font-weight: 300;
 }
 
 .slab_date {
-    font-size: 1.1em;
+    font-size: 1.0em;
     line-height: 1.2em;
     color: #A9A9A9;
     text-align:center;
+    font-weight: 300;
     font-family:'Helvetica', 'Avenir', 'Sans-Serif';
 }
 
@@ -293,16 +291,16 @@ table .absorbing-column {
 }
 
 .hr_slab {
-     height: 1px;
-     background-color: #d5d5d5;
-     border: none; 
-     padding: 0px; /* This line does nothing */
+     height: 2px;
+     background-color: #af5070; 
+     margin-top: 50px; /* This line does nothing */
      margin: 0px;
-     width:20%;
+     width: 15%;
      text-align:center;
 }
 
 .box {
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 50px;
 }
