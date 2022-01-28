@@ -1,0 +1,332 @@
+/* FONTS */
+
+@font-face {
+  font-family: "Adobe Garamond Pro";
+  src: url("AGaramondPro-Bold.eot");
+  src: url("AGaramondPro-Bold.eot?#iefix") format("embedded-opentype"),
+    url("AGaramondPro-Bold.woff2") format("woff2"),
+    url("AGaramondPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Garamond Pro";
+  src: url("AGaramondPro-Italic.eot");
+  src: url("AGaramondPro-Italic.eot?#iefix") format("embedded-opentype"),
+    url("AGaramondPro-Italic.woff2") format("woff2"),
+    url("AGaramondPro-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Garamond Pro";
+  src: url("AGaramondPro-Regular.eot");
+  src: url("AGaramondPro-Regular.eot?#iefix") format("embedded-opentype"),
+    url("AGaramondPro-Regular.woff2") format("woff2"),
+    url("AGaramondPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Garamond Pro";
+  src: url("AGaramondPro-BoldItalic.eot");
+  src: url("AGaramondPro-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("AGaramondPro-BoldItalic.woff2") format("woff2"),
+    url("AGaramondPro-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* GENERAL */
+
+html {
+  font-size: 10px;
+}
+
+* {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  box-sizing: border-box;
+  font-size: rem;
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: auto;
+  margin-bottom: 0px;
+  width: 70%;
+}
+
+a {
+  color: #a09b8a;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #6a2b54;
+}
+
+h1 {
+  margin-top: -5px;
+  font-size: 5.5rem;
+  font-family: "Source Sans Pro", "Sans-Serif";
+  font-weight: 600;
+  text-align: center;
+}
+
+.nav-bar {
+  font-family: "Source Sans Pro", "Helvetica", "Sans-Serif";
+  padding-bottom: 5px;
+  padding-top: 40px;
+  margin-top: 0px; /* Space between navegation bar and top of body*/
+  list-style: none;
+  font-weight: 500;
+  font-size: large;
+  text-align: right;
+  overflow: hidden;
+  position: sticky;
+  top: 0px;
+  border-bottom: 1px solid #d5d5d5;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+nav a {
+  z-index: 1;
+  font-size: 2rem;
+}
+
+nav li {
+  margin-top: -3rem;
+}
+
+.lighter {
+  font-size: 1.7rem;
+  line-height: 1.4em;
+  width: 100%;
+  font-family: "Source Sans Pro", "Sans-Serif";
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.4em;
+  color: #333;
+  position: relative;
+  text-align: left;
+}
+
+/* Plasmid Home */
+.centerImage {
+  text-align: center;
+  display: block;
+  margin-top: 5%;
+}
+
+/* RESEARCH */
+
+.research-body {
+  width: 70%;
+  margin: auto;
+}
+
+.rsrcht {
+  margin: auto;
+  margin-top: 5rem;
+  font-size: 3.8rem;
+  /* line-height: 1.4em; */
+  color: #6a2b54;
+  font-family: "Adobe Garamond Pro", "Sans Serif";
+  text-align: center;
+}
+
+.hid {
+  margin-bottom: 5rem;
+}
+
+.rimg {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+}
+
+#plasmidsky {
+  margin: auto;
+  width: 50%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.research {
+  font-size: 1em;
+  line-height: 1.4em;
+  color: #333;
+  font-family: "Source Sans Pro", "Sans-Serif";
+  width: 100%;
+}
+
+hr {
+  height: 1px;
+  background-color: #d5d5d5;
+  border: none;
+  padding: 0px; /* This line does nothing */
+  margin: 0px;
+}
+
+footer {
+  z-index: 1;
+  clear: both;
+  bottom: 0px;
+  position: fixed;
+  width: 70%;
+  border-top: 1px solid #d5d5d5;
+  background-color: #ffffff;
+}
+
+/* CV */
+
+#image-Afra {
+  float: right;
+  margin-right: 4rem;
+  width: 25%;
+  border-radius: 50%;
+  margin-top: 8.5rem;
+}
+
+/* CV text */
+.short-cv {
+  margin: 8rem 10rem 10rem 0;
+}
+
+/* CV text italic in about */
+.short-cv li {
+  list-style: none;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* CV titles */
+.title-cv {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* CV text */
+.short-cv ul {
+  padding: 0;
+  margin-bottom: 4rem;
+  margin-top: 2.2rem;
+  margin-left: 3rem;
+  list-style: none;
+  display: block;
+}
+
+.short-cv li {
+  display: block;
+}
+
+/* CV dates */
+.dates-cv {
+  display: inline-block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.2rem;
+  color: #6f2741;
+}
+
+/* CV uni names */
+.unis-cv {
+  font-family: "Adobe Garamond Pro", sans-serif;
+  font-size: 1.8rem;
+  margin-top: -0.2rem;
+}
+
+#cv-name {
+  display: block;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: -1.5rem;
+}
+
+.bar-cv {
+  color: #6e4755;
+}
+
+#download-cv a {
+  font-weight: 300;
+}
+
+/* BLOG */
+.slab {
+  width: 100%;
+  font-size: 5rem;
+  text-align: center;
+  line-height: 1.5em;
+  color: #212121;
+  font-family: "Adobe Garamond Pro";
+  padding-bottom: 0px;
+  margin-bottom: 1px;
+  font-weight: 400;
+}
+
+.slab_date {
+  font-size: 1.6rem;
+  line-height: 1.2rem;
+  color: #a9a9a9;
+  text-align: center;
+  font-weight: 300;
+  font-family: "Helvetica", "Source Sans Pro", "Sans-Serif";
+  margin-bottom: 3rem;
+}
+
+.slab_paragraph {
+  /*For now it is the same as lighter*/
+  font-size: 2rem;
+  line-height: 1.5em;
+  color: #333;
+  font-family: "Adobe Garamond Pro";
+  width: 100%;
+  font-weight: normal;
+}
+
+.slab_paragraph a {
+  font-family: "Adobe Garamond Pro";
+  font-weight: 400;
+}
+
+.slab_paragraph i {
+  font-family: "Adobe Garamond Pro";
+  font-style: italic;
+  font-weight: 400;
+}
+
+.hr_slab {
+  height: 2px;
+  background-color: #af5070;
+  margin-top: 50px; /* This line does nothing */
+  margin: 0px;
+  width: 15%;
+  text-align: center;
+}
+
+.box {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 50px;
+}
