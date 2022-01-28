@@ -1,0 +1,76 @@
+@media screen and (max-width: 768px) {
+  body {
+    width: 85%;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .rsrcht {
+    width: 100%;
+    font-size: 3rem;
+    color: #6a2b54;
+    font-family: "Adobe Garamond Pro";
+    padding-bottom: 0px;
+    margin-bottom: 1px;
+  }
+
+  .research-body {
+    width: 100%;
+  }
+
+  #plasmidsky {
+    margin: auto;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .namecv {
+    font-size: x-large;
+    line-height: 1.4em;
+    color: #333;
+    position: relative;
+    text-align: left;
+    font-weight: 400;
+    font-family: "Source Sans Pro", "Sans-Serif";
+  }
+
+  .rimg {
+    text-align: center;
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  /* CV */
+  .short-cv {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  #image-Afra {
+    float: none;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+  }
+
+  .short-cv {
+    margin-top: 4rem;
+  }
+
+  .short-cv ul {
+    margin-left: 0rem;
+  }
+
+  /* BLOG */
+  .box {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
