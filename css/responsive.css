@@ -3,8 +3,35 @@
     width: 85%;
   }
 
+  .nav-bar {
+    display: none;
+  }
+
+  .nav-bar-bottom {
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: "Source Sans Pro", "Helvetica", "Sans-Serif";
+    font-style: normal;
+    list-style: none;
+    font-weight: 500;
+    font-size: large;
+    text-align: center;
+    overflow: hidden;
+    position: sticky;
+    bottom: 0rem;
+    border-top: 1px solid #d5d5d5;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+
+  .nav-bar-bottom li a {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+
   footer {
-    width: 100%;
+    width: 85%;
   }
 
   .rsrcht {
@@ -25,6 +52,12 @@
     width: 100%;
     margin-top: 3rem;
     margin-bottom: 3rem;
+  }
+
+  #cv-name {
+    text-align: center;
+    margin-top: -1rem;
+    margin-bottom: 2.5rem;
   }
 
   .namecv {

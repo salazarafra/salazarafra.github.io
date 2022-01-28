@@ -105,6 +105,10 @@ h1 {
   z-index: 1;
 }
 
+.nav-bar-bottom {
+  display: none;
+}
+
 nav a {
   z-index: 1;
   font-size: 2rem;
@@ -116,7 +120,7 @@ nav li {
 
 .lighter {
   font-size: 1.7rem;
-  line-height: 1.4em;
+  line-height: 1.45em;
   width: 100%;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
@@ -152,8 +156,8 @@ p {
   color: #6a2b54;
   font-family: "Adobe Garamond Pro", "Sans Serif";
   text-align: center;
-  font-weight:normal;
-  font-style:normal;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .hid {
@@ -180,7 +184,7 @@ p {
   font-size: 1em;
   line-height: 1.4em;
   color: #333;
-    font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   font-style: normal;
   width: 100%;
@@ -262,8 +266,8 @@ footer {
 /* CV uni names */
 .unis-cv {
   font-family: "Adobe Garamond Pro", sans-serif;
-  font-weight:normal;
-  font-style:normal;
+  font-weight: normal;
+  font-style: normal;
   font-size: 1.8rem;
   margin-top: -0.2rem;
 }
@@ -294,7 +298,7 @@ footer {
   padding-bottom: 0px;
   margin-bottom: 1px;
   font-weight: normal;
-  font-style:normal;
+  font-style: normal;
 }
 
 .slab_date {
@@ -315,19 +319,19 @@ footer {
   font-family: "Adobe Garamond Pro";
   width: 100%;
   font-weight: normal;
-  font-style:normal;
+  font-style: normal;
 }
 
 .slab_paragraph a {
   font-family: "Adobe Garamond Pro";
-  font-weight:normal;
-  font-style:normal;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .slab_paragraph i {
   font-family: "Adobe Garamond Pro";
   font-style: italic;
-  font-weight:normal;
+  font-weight: normal;
 }
 
 .hr_slab {
