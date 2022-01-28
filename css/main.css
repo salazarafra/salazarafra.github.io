@@ -143,10 +143,11 @@ p {
   margin: auto;
   margin-top: 5rem;
   font-size: 3.8rem;
-  /* line-height: 1.4em; */
   color: #6a2b54;
   font-family: "Adobe Garamond Pro", "Sans Serif";
   text-align: center;
+  font-weight:normal;
+  font-style:normal;
 }
 
 .hid {
@@ -253,6 +254,8 @@ footer {
 /* CV uni names */
 .unis-cv {
   font-family: "Adobe Garamond Pro", sans-serif;
+  font-weight:normal;
+  font-style:normal;
   font-size: 1.8rem;
   margin-top: -0.2rem;
 }
@@ -282,7 +285,8 @@ footer {
   font-family: "Adobe Garamond Pro";
   padding-bottom: 0px;
   margin-bottom: 1px;
-  font-weight: 400;
+  font-weight: normal;
+  font-style:normal;
 }
 
 .slab_date {
@@ -303,17 +307,19 @@ footer {
   font-family: "Adobe Garamond Pro";
   width: 100%;
   font-weight: normal;
+  font-style:normal;
 }
 
 .slab_paragraph a {
   font-family: "Adobe Garamond Pro";
-  font-weight: 400;
+  font-weight:normal;
+  font-style:normal;
 }
 
 .slab_paragraph i {
   font-family: "Adobe Garamond Pro";
   font-style: italic;
-  font-weight: 400;
+  font-weight:normal;
 }
 
 .hr_slab {
