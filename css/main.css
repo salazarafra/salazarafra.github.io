@@ -46,11 +46,14 @@
   font-style: italic;
   font-display: swap;
 }
+
 /* GENERAL */
 
 html {
   font-size: 10px;
 }
+
+/* Detault parameters */
 
 * {
   font-family: "Source Sans Pro";
@@ -69,6 +72,7 @@ body {
   width: 70%;
 }
 
+/* Anchors */
 a {
   color: #a09b8a;
   font-weight: 600;
@@ -105,6 +109,7 @@ h1 {
   z-index: 1;
 }
 
+/* Navigation bar for computer format */
 .nav-bar-bottom {
   display: none;
 }
@@ -135,7 +140,8 @@ p {
   text-align: left;
 }
 
-/* Plasmid Home */
+/* HOME */
+
 .centerImage {
   text-align: center;
   display: block;
@@ -149,6 +155,7 @@ p {
   margin: auto;
 }
 
+/* Research titles */
 .rsrcht {
   margin: auto;
   margin-top: 5rem;
@@ -160,10 +167,12 @@ p {
   font-style: normal;
 }
 
+/* Research paragraphs */
 .hid {
   margin-bottom: 5rem;
 }
 
+/* Research images */
 .rimg {
   width: 70%;
   display: block;
@@ -194,7 +203,7 @@ hr {
   height: 1px;
   background-color: #d5d5d5;
   border: none;
-  padding: 0px; /* This line does nothing */
+  padding: 0px;
   margin: 0px;
 }
 
