@@ -184,7 +184,7 @@ p {
 .separator {
   margin: auto;
   display: flex;
-  width: 6rem;
+  width: 18rem;
   margin-top: 0rem;
   margin-bottom: 5rem;
 }
