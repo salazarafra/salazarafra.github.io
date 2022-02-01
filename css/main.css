@@ -181,6 +181,14 @@ p {
   margin-bottom: 0rem;
 }
 
+.separator {
+  margin: auto;
+  display: flex;
+  width: 6rem;
+  margin-top: 0rem;
+  margin-bottom: 5rem;
+}
+
 #plasmidsky {
   margin: auto;
   width: 50%;
