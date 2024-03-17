@@ -351,11 +351,11 @@ footer {
 }
 
 .hr_slab {
-  height: 2px;
-  background-color: #af5070;
+  height: 1px;
+  background-color: #DBD4D0;
   margin-top: 50px; /* This line does nothing */
   margin: 0px;
-  width: 15%;
+  width: 100%;
   text-align: center;
 }
 
