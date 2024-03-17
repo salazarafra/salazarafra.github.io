@@ -317,6 +317,19 @@ footer {
   font-style: normal;
 }
 
+.slabRED {
+  width: 100%;
+  font-size: 4rem;
+  text-align: left;
+  line-height: 1.5em;
+  color: #612F53;
+  font-family: "Adobe Garamond Pro";
+  padding-bottom: 0px;
+  margin-bottom: 1px;
+  font-weight: normal;
+  font-style: normal;
+}
+
 .slab_date {
   font-size: 1.6rem;
   line-height: 1.2rem;
