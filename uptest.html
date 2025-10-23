@@ -10,27 +10,24 @@
     height: 100%;
     font-family: "Times New Roman", serif;
     background: #fff;
+  }
+
+  /* Container for everything */
+  .page {
+    display: flex;
+    flex-direction: column-reverse; /* content flows upward */
+    height: 100vh;
     overflow-y: scroll;
     scroll-behavior: smooth;
   }
 
-  /* Wrapper to control scroll direction */
-  .wrapper {
-    display: flex;
-    flex-direction: column-reverse; /* newest at bottom */
-    min-height: 200vh; /* make scrollable space (adjust if needed) */
-    justify-content: flex-start;
-  }
-
-  /* Right-side month list */
+  /* Months list */
   .months {
-    position: fixed;
-    right: 5%;
-    bottom: 3rem; /* above the bottom bar */
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column-reverse; /* newest month at bottom */
     align-items: flex-end;
-    gap: 0.4rem;
+    margin: 2rem 5% 6rem 0; /* right-aligned, with space for bottom bar */
+    gap: 0.5rem;
     font-size: 1.6rem;
   }
 
@@ -41,16 +38,15 @@
 
   /* Bottom bar */
   .bottom-bar {
-    position: fixed;
+    position: sticky;
     bottom: 0;
-    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 1rem 2rem;
-    box-sizing: border-box;
     font-size: 1.4rem;
+    background: white; /* keep text visible if you scroll */
   }
 
   .bottom-bar .center {
@@ -61,7 +57,7 @@
 </style>
 </head>
 <body>
-  <div class="wrapper">
+  <div class="page" id="page">
     <div class="months">
       <div>MARCH</div>
       <div>APRIL</div>
@@ -106,5 +102,14 @@
       <div class="center">Something like a blog</div>
     </div>
   </div>
+
+  <script>
+    // Automatically scroll to bottom on load
+    const page = document.getElementById('page');
+    window.addEventListener('load', () => {
+      page.scrollTop = page.scrollHeight;
+    });
+  </script>
 </body>
 </html>
+
