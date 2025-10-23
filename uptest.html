@@ -12,21 +12,21 @@
     background: #fff;
   }
 
-  /* Container for everything */
-  .page {
-    display: flex;
-    flex-direction: column-reverse; /* content flows upward */
+  /* Scrollable container for months */
+  .months-container {
     height: 100vh;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse; /* newest at bottom */
     scroll-behavior: smooth;
+    padding-bottom: 5rem; /* space for bottom bar */
   }
 
-  /* Months list */
   .months {
     display: flex;
-    flex-direction: column-reverse; /* newest month at bottom */
+    flex-direction: column-reverse;
     align-items: flex-end;
-    margin: 2rem 5% 6rem 0; /* right-aligned, with space for bottom bar */
+    margin: 2rem 5%;
     gap: 0.5rem;
     font-size: 1.6rem;
   }
@@ -36,17 +36,19 @@
     letter-spacing: 0.05em;
   }
 
-  /* Bottom bar */
+  /* Fixed bottom navigation bar */
   .bottom-bar {
-    position: sticky;
+    position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 1rem 2rem;
     font-size: 1.4rem;
-    background: white; /* keep text visible if you scroll */
+    background: white;
+    border-top: 1px solid #ddd;
   }
 
   .bottom-bar .center {
@@ -57,59 +59,49 @@
 </style>
 </head>
 <body>
-  <div class="page" id="page">
+  <!-- scrollable months area -->
+  <div class="months-container" id="months-container">
     <div class="months">
       <div>MARCH</div>
+      <div>FEBRUARY</div>
+      <div>JANUARY</div>
+      <div>DECEMBER</div>
+      <div>NOVEMBER</div>
+      <div>OCTOBER</div>
+      <div>SEPTEMBER</div>
+      <div>AUGUST</div>
+      <div>JULY</div>
+      <div>JUNE</div>
       <div>APRIL</div>
       <div>MAY</div>
-      <div>JUNE</div>
-      <div>JULY</div>
-      <div>AUGUST</div>
-      <div>SEPTEMBER</div>
-      <div>OCTOBER</div>
-      <div>NOVEMBER</div>
-      <div>DECEMBER</div>
-      <div>JANUARY</div>
-      <div>FEBRUARY</div>
       <div>MARCH</div>
+      <div>FEBRUARY</div>
+      <div>JANUARY</div>
+      <div>DECEMBER</div>
+      <div>NOVEMBER</div>
+      <div>OCTOBER</div>
+      <div>SEPTEMBER</div>
+      <div>AUGUST</div>
+      <div>JULY</div>
+      <div>JUNE</div>
       <div>APRIL</div>
       <div>MAY</div>
-      <div>JUNE</div>
-      <div>JULY</div>
-      <div>AUGUST</div>
-      <div>SEPTEMBER</div>
-      <div>OCTOBER</div>
-      <div>NOVEMBER</div>
-      <div>DECEMBER</div>
-      <div>JANUARY</div>
-      <div>FEBRUARY</div>
       <div>MARCH</div>
-      <div>APRIL</div>
-      <div>MAY</div>
-      <div>JUNE</div>
-      <div>JULY</div>
-      <div>AUGUST</div>
-      <div>SEPTEMBER</div>
-      <div>OCTOBER</div>
-      <div>NOVEMBER</div>
-      <div>DECEMBER</div>
-      <div>JANUARY</div>
-      <div>FEBRUARY</div>
-    </div>
-
-    <div class="bottom-bar">
-      <div class="left">&lt;&lt;</div>
-      <div class="center">Something like a blog</div>
     </div>
   </div>
 
+  <!-- fixed bottom navigation -->
+  <div class="bottom-bar">
+    <div class="left">&lt;&lt;</div>
+    <div class="center">Something like a blog</div>
+  </div>
+
   <script>
-    // Automatically scroll to bottom on load
-    const page = document.getElementById('page');
+    // Scroll to bottom on load
+    const monthsContainer = document.getElementById('months-container');
     window.addEventListener('load', () => {
-      page.scrollTop = page.scrollHeight;
+      monthsContainer.scrollTop = monthsContainer.scrollHeight;
     });
   </script>
 </body>
 </html>
-
