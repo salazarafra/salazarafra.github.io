@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upside-Down Page</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    /* Scrollable content container */
+    .content {
+      display: flex;
+      flex-direction: column-reverse; /* New content appears at bottom */
+      overflow-y: scroll;
+      flex: 1;
+      padding: 1rem;
+      background: #f9f9f9;
+    }
+
+    /* Navigation bar at bottom */
+    .navbar {
+      position: sticky;
+      bottom: 0;
+      background: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .item {
+      background: white;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="content" id="content">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+  </div>
+
+  <div class="navbar">
+    Navigation Bar
+  </div>
+
+  <script>
+    // Ensure user starts at the bottom
+    const content = document.getElementById('content');
+    content.scrollTop = content.scrollHeight;
+
+    // Example: Add new content dynamically at the bottom
+    let count = 6;
+    setInterval(() => {
+      const div = document.createElement('div');
+      div.className = 'item';
+      div.textContent = 'New item ' + count++;
+      content.prepend(div); // since flex-direction is column-reverse
+    }, 2000);
+  </script>
+</body>
+</html>
