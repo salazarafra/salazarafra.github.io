@@ -1,255 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Bottom-nav with upward-growing months</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Something like a blog</title>
 <style>
-  :root{
-    --bar-height: 22vh; /* height of the bottom bar (adjustable) */
+  html, body {
+    margin: 0;
+    height: 100%;
+    font-family: "Times New Roman", serif;
+    background: #fff;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
   }
 
-  html,body{
-    height:100%;
-    margin:0;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    background: #f4f6f8;
+  /* Wrapper to control scroll direction */
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse; /* newest at bottom */
+    min-height: 200vh; /* make scrollable space (adjust if needed) */
+    justify-content: flex-start;
   }
 
-  /* Page content area (if you want content above the bottom bar) */
-  .page {
-    min-height: calc(100% - var(--bar-height));
-    padding: 1rem;
-    box-sizing: border-box;
+  /* Right-side month list */
+  .months {
+    position: fixed;
+    right: 5%;
+    bottom: 3rem; /* above the bottom bar */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    gap: 0.4rem;
+    font-size: 1.6rem;
   }
 
-  /* Fixed bottom bar that spans full width */
+  .months div {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* Bottom bar */
   .bottom-bar {
     position: fixed;
-    left: 0;
-    right: 0;
     bottom: 0;
-    height: var(--bar-height);
+    left: 0;
+    width: 100%;
     display: flex;
-    background: linear-gradient(180deg, #ffffffcc, #efefef);
-    box-shadow: 0 -6px 20px rgba(0,0,0,0.08);
-    border-top: 1px solid rgba(0,0,0,0.06);
-  }
-
-  /* Navigation area: 80% of horizontal space */
-  .nav {
-    flex: 0 0 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding: 0.75rem;
-  }
-
-  .nav .logo {
-    font-weight: 700;
-    font-size: 1.05rem;
-  }
-
-  .nav .links {
-    display:flex;
-    gap:0.75rem;
-  }
-
-  .nav a {
-    text-decoration: none;
-    color: #222;
-    padding: 0.45rem 0.7rem;
-    border-radius: 6px;
-    background: rgba(0,0,0,0.03);
-    font-weight: 500;
-  }
-
-  /* Months column: 20% of horizontal space, anchored to bottom */
-  .months-col {
-    flex: 0 0 20%;
-    border-left: 1px solid rgba(0,0,0,0.05);
-    display:flex;
-    align-items: flex-end; /* ensure items start at the bottom */
-    padding: 0.5rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem 2rem;
     box-sizing: border-box;
-    background: linear-gradient(0deg, #ffffff, #fbfbfc);
+    font-size: 1.4rem;
   }
 
-  /* The scrolling container that grows upward visually */
-  .months {
-    width:100%;
-    height:100%;
-    display:flex;
-    flex-direction: column-reverse; /* newest at the visual bottom */
-    gap: 0.4rem;
-    overflow-y: auto;
-    padding: 0.25rem;
-    box-sizing:border-box;
-  }
-
-  .month-item {
-    display:block;
-    text-decoration:none;
-    padding: 0.35rem 0.5rem;
-    border-radius: 6px;
-    background: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-    font-size: 0.9rem;
-    color: #0b62a8;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  /* small controls for demo/testing */
-  .controls {
-    margin-top: 0.6rem;
-    font-size: 0.9rem;
-  }
-
-  button {
-    padding: 0.4rem 0.6rem;
-    border-radius: 6px;
-    border: 1px solid rgba(0,0,0,0.08);
-    background: white;
-    cursor:pointer;
-  }
-
-  /* Responsive tweaks */
-  @media (max-width:720px){
-    :root{ --bar-height: 26vh; }
-    .nav a { font-size: 0.85rem; padding: 0.35rem 0.5rem; }
-    .month-item { font-size: 0.85rem; }
+  .bottom-bar .center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 </style>
 </head>
 <body>
-  <div class="page">
-    <h1>Example page content</h1>
-    <p>Put any page content here — the bottom bar remains fixed.</p>
+  <div class="wrapper">
+    <div class="months">
+      <div>MARCH</div>
+      <div>FEBRUARY</div>
+      <div>JANUARY</div>
+      <div>DECEMBER</div>
+      <div>NOVEMBER</div>
+      <div>OCTOBER</div>
+      <div>SEPTEMBER</div>
+      <div>AUGUST</div>
+      <div>JULY</div>
+      <div>JUNE</div>
+      <div>APRIL</div>
+      <div>MAY</div>
+      <div>MARCH</div>
+    </div>
 
-    <div class="controls" aria-hidden="true">
-      (Demo) Add a month: <button id="add-month-btn">Add month now</button>
-      <button id="clear-btn">Clear months</button>
+    <div class="bottom-bar">
+      <div class="left">&lt;&lt;</div>
+      <div class="center">Something like a blog</div>
     </div>
   </div>
-
-  <!-- Fixed bottom bar -->
-  <div class="bottom-bar" role="region" aria-label="Bottom navigation and months">
-    <!-- 80% navigation area -->
-    <nav class="nav" aria-label="Main navigation">
-      <div class="logo">MySite</div>
-      <div class="links" role="navigation" aria-label="links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#archive">Archive</a>
-      </div>
-    </nav>
-
-    <!-- 20% months column (items grow upward, newest at bottom) -->
-    <aside class="months-col" aria-label="Monthly items">
-      <div id="months" class="months" aria-live="polite" aria-atomic="false">
-        <!-- month items injected here -->
-      </div>
-    </aside>
-  </div>
-
-<script>
-/*
- Behavior:
- - Months are stored as an array in localStorage (so they persist across reloads).
- - The months container uses column-reverse, so we add items with .appendChild (visual bottom).
- - On load, we scroll the months container to bottom (so latest month is visible).
- - Example function addMonth(name, url) is provided; demo button generates next month name.
-*/
-
-const STORAGE_KEY = 'upward_months_v1';
-const monthsEl = document.getElementById('months');
-
-function loadMonths() {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : [];
-  } catch (e) {
-    console.warn('Failed to load months:', e);
-    return [];
-  }
-}
-
-function saveMonths(arr){
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(arr));
-  } catch(e) {
-    console.warn('Failed to save months:', e);
-  }
-}
-
-function renderMonths() {
-  monthsEl.innerHTML = '';
-  const arr = loadMonths();
-  // Because container is column-reverse, appendChild will put newest at bottom visually if arr order is oldest->newest.
-  arr.forEach(item => {
-    const a = document.createElement('a');
-    a.className = 'month-item';
-    a.href = item.url || '#';
-    a.textContent = item.name;
-    a.title = item.name;
-    monthsEl.appendChild(a);
-  });
-
-  // ensure we land at bottom (show the latest month)
-  // Use setTimeout to allow the browser to layout the new children first.
-  setTimeout(() => {
-    monthsEl.scrollTop = monthsEl.scrollHeight;
-  }, 0);
-}
-
-function addMonth(name, url){
-  const arr = loadMonths();
-  arr.push({ name, url });
-  saveMonths(arr);
-  renderMonths();
-}
-
-function clearMonths(){
-  localStorage.removeItem(STORAGE_KEY);
-  renderMonths();
-}
-
-/* Demo: create a month label for the next month sequentially */
-function demoNextMonth(){
-  const arr = loadMonths();
-  // If there are existing months, base next name on last item (or fallback to current date)
-  const now = new Date();
-  let nextDate;
-  if (arr.length === 0) {
-    nextDate = now;
-  } else {
-    // parse last saved month name to advance — if parsing fails, just increment month from now
-    const last = arr[arr.length - 1].name; // e.g. "October 2025"
-    const parsed = new Date(last + ' 1'); // try "October 2025 1"
-    if (!isNaN(parsed)) {
-      nextDate = new Date(parsed.getFullYear(), parsed.getMonth() + 1, 1);
-    } else {
-      nextDate = new Date(now.getFullYear(), now.getMonth() + arr.length, 1);
-    }
-  }
-  const monthName = nextDate.toLocaleString(undefined, { month: 'long', year: 'numeric' });
-  addMonth(monthName, '#');
-}
-
-/* Wire up demo buttons */
-document.getElementById('add-month-btn').addEventListener('click', demoNextMonth);
-document.getElementById('clear-btn').addEventListener('click', clearMonths);
-
-/* Initial render on page load */
-renderMonths();
-
-/* Accessibility note:
- - The months area has aria-live="polite" so screen readers will announce new items without being too aggressive.
- - You can tweak aria attributes depending on desired announcement behavior.
-*/
-</script>
 </body>
 </html>
