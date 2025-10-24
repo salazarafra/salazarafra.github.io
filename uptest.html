@@ -26,14 +26,14 @@
 
     /* Navbar: fixed bottom-left, minimal width, divider between << and text */
     .navbar {
-      position: fixed;
-      bottom: 0;
+      position: fixed; 
+      bottom: 2rem; /* Nav bar a bit elevated */
       left: 0;
-      width: 80%;
+      width: 75%;
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
-      background-color: white;
+      /* background-color: white; Remove color*/
       border-top: 0px solid #ccc;
       padding: 0.8rem 2rem;
       box-sizing: border-box;
@@ -42,11 +42,11 @@
     }
 
     .nav-left {
-      margin-left: 1rem; 
+      margin-left: 1rem; /* Margin between << and left */
     }
 
     .nav-right {
-      margin-right: 1rem; /* Margin between << and left */
+      margin-right: 0rem; /* Margin between SLAB and right */
       white-space: nowrap;
     }
 
@@ -62,7 +62,7 @@
       background-color: white; 
       justify-content: flex-end; /* push months to the right */
       box-sizing: border-box;
-      padding: 0.2rem; /* whitespace inside viewport */
+      padding: 2rem; /* whitespace inside viewport */
     }
 
     .months {
@@ -76,15 +76,15 @@
     }
 
     .month {
-      padding: 0.35rem 0.5rem;
-      margin: 0.25rem 0rem;
+      padding: 0.6rem 0.5rem;
+      margin: 0.2rem 0rem;
     }
 
     /* Responsive: shrink navbar, hide label on very narrow screens */
     @media (max-width: 600px) {
       .nav-right { display: none; }
       .months { width: 60%; margin-right: 2rem; }
-      .navbar { left: 1rem; bottom: 1rem; }
+      .navbar { left: 1rem; bottom: 2rem; }
     }
   </style>
 </head>
