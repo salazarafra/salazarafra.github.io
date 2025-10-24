@@ -1,107 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Something like a blog</title>
-<style>
-  html, body {
-    margin: 0;
-    height: 100%;
-    font-family: "Times New Roman", serif;
-    background: #fff;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Something Like a Blog</title>
+  <style>
+    /* Reset */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      scroll-behavior: smooth;
+      font-family: 'Georgia', serif;
+      background: #fff;
+      color: #111;  /* Font color */
+    }
 
-  /* Scrollable container for months */
-  .months-container {
-    height: 100vh;
-    overflow-y: scroll;
-    display: flex;
-    flex-direction: column-reverse; /* newest at bottom */
-    scroll-behavior: smooth;
-    padding-bottom: 5rem; /* space for bottom bar */
-  }
+    /* Page wrapper — allows normal document flow and scrolling */
+    .page {
+      min-height: 100vh;
+      box-sizing: border-box;
+      padding-bottom: 0rem; /* space for fixed navbar */
+      display: block; /* keep normal flow so page scrolls */
+    }
 
-  .months {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-end;
-    margin: 2rem 5%;
-    gap: 0.5rem;
-    font-size: 1.6rem;
-  }
+    /* Navbar: fixed bottom-left, minimal width, divider between << and text */
+    .navbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      background-color: white;
+      border-top: 0px solid #ccc;
+      padding: 0.8rem 2rem;
+      box-sizing: border-box;
+      font-family: 'Georgia', serif;
+      font-size: 14pt;
+    }
 
-  .months div {
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
+    .nav-left {
+      margin-left: 1rem; 
+    }
 
-  /* Fixed bottom navigation bar */
-  .bottom-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 1rem 2rem;
-    font-size: 1.4rem;
-    background: white;
-    border-top: 1px solid #ddd;
-  }
+    .nav-right {
+      margin-right: 1rem; /* Margin between << and left */
+      white-space: nowrap;
+    }
 
-  .bottom-bar .center {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-</style>
+    .nav-left .chev {
+      font-weight: bold;
+    
+    }
+
+    /* Months column: stays on the right side, right-aligned list */
+    .months-wrapper {
+      width: 100%;
+      display: flex;
+      background-color: white; 
+      justify-content: flex-end; /* push months to the right */
+      box-sizing: border-box;
+      padding: 0.2rem; /* whitespace inside viewport */
+    }
+
+    .months {
+      display: flex;
+      flex-direction: column-reverse; /* newest at bottom */
+      align-items: flex-start; /* left aligned text */
+      max-width: 420px; /* limit width of months list */
+      width: 20%;
+      min-width: 180px;
+      margin-right: 0rem; /* extra whitespace between months and viewport edge */
+    }
+
+    .month {
+      padding: 0.35rem 0.5rem;
+      margin: 0.25rem 0rem;
+    }
+
+    /* Responsive: shrink navbar, hide label on very narrow screens */
+    @media (max-width: 600px) {
+      .nav-right { display: none; }
+      .months { width: 60%; margin-right: 2rem; }
+      .navbar { left: 1rem; bottom: 1rem; }
+    }
+  </style>
 </head>
 <body>
-  <!-- scrollable months area -->
-  <div class="months-container" id="months-container">
-    <div class="months">
-      <div>MARCH</div>
-      <div>FEBRUARY</div>
-      <div>JANUARY</div>
-      <div>DECEMBER</div>
-      <div>NOVEMBER</div>
-      <div>OCTOBER</div>
-      <div>SEPTEMBER</div>
-      <div>AUGUST</div>
-      <div>JULY</div>
-      <div>JUNE</div>
-      <div>APRIL</div>
-      <div>MAY</div>
-      <div>MARCH</div>
-      <div>FEBRUARY</div>
-      <div>JANUARY</div>
-      <div>DECEMBER</div>
-      <div>NOVEMBER</div>
-      <div>OCTOBER</div>
-      <div>SEPTEMBER</div>
-      <div>AUGUST</div>
-      <div>JULY</div>
-      <div>JUNE</div>
-      <div>APRIL</div>
-      <div>MAY</div>
-      <div>MARCH</div>
+
+  <div class="page">
+    <!-- content above months could go here -->
+
+    <div class="months-wrapper">
+      <div class="months" id="months">
+        <!-- lots of months to allow scrolling -->
+        <div class="month">DECEMBER</div>
+        <div class="month">NOVEMBER</div>
+        <div class="month">OCTOBER</div>
+        <div class="month">SEPTEMBER</div>
+        <div class="month">AUGUST</div>
+        <div class="month">JULY</div>
+        <div class="month">JUNE</div>
+        <div class="month">MAY</div>
+        <div class="month">APRIL</div>
+        <div class="month">MARCH</div>
+        <div class="month">FEBRUARY</div>
+        <div class="month">JANUARY</div>
+        <div class="month">DECEMBER</div>
+        <div class="month">NOVEMBER</div>
+        <div class="month">OCTOBER</div>
+        <div class="month">SEPTEMBER</div>
+        <div class="month">AUGUST</div>
+        <div class="month">JULY</div>
+        <div class="month">JUNE</div>
+        <div class="month">MAY</div>
+        <div class="month">APRIL</div>
+        <div class="month">MARCH</div>
+        <div class="month">FEBRUARY</div>
+        <div class="month">JANUARY</div>
+        <div class="month">DECEMBER</div>
+      </div>
     </div>
+
   </div>
 
-  <!-- fixed bottom navigation -->
-  <div class="bottom-bar">
-    <div class="left">&lt;&lt;</div>
-    <div class="center">Something like a blog</div>
+  <div class="navbar" role="navigation" aria-label="bottom navigation">
+    <div class="nav-left">
+      <div class="chev">&lt;&lt;</div>
+    </div>
+    <div class="nav-right">Something like a blog</div>
   </div>
 
   <script>
-    // Scroll to bottom on load
-    const monthsContainer = document.getElementById('months-container');
-    window.addEventListener('load', () => {
-      monthsContainer.scrollTop = monthsContainer.scrollHeight;
+    // Ensure page initially scrolls to the bottom so latest months are visible
+    function scrollToBottom() {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'instant' });
+    }
+
+    // Call after load and after a short delay to allow fonts/layout to settle
+    window.addEventListener('load', function() {
+      scrollToBottom();
+      setTimeout(scrollToBottom, 80);
     });
+
+    // Optional: keep navbar vertically aligned slightly above baseline of last month
+    // (commented out — enable if you want dynamic alignment)
+    /*
+    function alignNavbarWithLastMonth() {
+      var months = document.getElementById('months');
+      var items = months.querySelectorAll('.month');
+      if (!items.length) return;
+      var last = items[items.length-1];
+      var rect = last.getBoundingClientRect();
+      var navbar = document.querySelector('.navbar');
+      // place navbar so its center is near last month baseline
+      navbar.style.bottom = (window.innerHeight - rect.bottom + 12) + 'px';
+    }
+    window.addEventListener('resize', alignNavbarWithLastMonth);
+    window.addEventListener('load', alignNavbarWithLastMonth);
+    */
   </script>
+
 </body>
 </html>
