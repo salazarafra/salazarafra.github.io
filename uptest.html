@@ -45,10 +45,9 @@
       box-sizing: border-box;
       font-family: 'Cormorant Garamond', serif;
       font-weight: 300;
-      font-size: 24px;
+      font-size: 26px;
     }
   
-
     .nav-left {
       margin-left: 2rem; /* Margin between << and left */
     }
@@ -99,7 +98,7 @@
 <body>
 
   <div class="page">
-    <!-- content above months could go here -->
+    <!-- Content above months, if any -->
 
     <div class="months-wrapper">
       <div class="months" id="months">
@@ -152,23 +151,6 @@
       scrollToBottom();
       setTimeout(scrollToBottom, 80);
     });
-
-    // Optional: keep navbar vertically aligned slightly above baseline of last month
-    // (commented out — enable if you want dynamic alignment)
-    /*
-    function alignNavbarWithLastMonth() {
-      var months = document.getElementById('months');
-      var items = months.querySelectorAll('.month');
-      if (!items.length) return;
-      var last = items[items.length-1];
-      var rect = last.getBoundingClientRect();
-      var navbar = document.querySelector('.navbar');
-      // place navbar so its center is near last month baseline
-      navbar.style.bottom = (window.innerHeight - rect.bottom + 12) + 'px';
-    }
-    window.addEventListener('resize', alignNavbarWithLastMonth);
-    window.addEventListener('load', alignNavbarWithLastMonth);
-    */
   </script>
 
 </body>
