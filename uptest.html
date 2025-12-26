@@ -58,8 +58,18 @@
       white-space: nowrap;
     }
 
-    .nav-left .chev {
+    .nav-left {
       font-weight: 300;
+    }
+
+    .chev {
+      font-weight: 300;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .chev:hover {
+      opacity: 0.6; /* subtle hover feedback */
     }
 
     /* Months column: stays on the right side, right-aligned list */
@@ -112,7 +122,7 @@
 
   <div class="navbar" role="navigation" aria-label="bottom navigation">
     <div class="nav-left">
-      <div class="chev">&lt;&lt;</div>
+      <a href="index.html" class="chev">&lt;&lt;</a>
     </div>
     <div class="nav-right">Something like a blog</div>
   </div>
